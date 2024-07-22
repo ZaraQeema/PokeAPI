@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポケモン図鑑検索</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+    h1 {
+        color: #FF5733;
+    }
+    input[type="number"] {
+            padding: 30px;
+            width: 200%;
+            font-size: 3.2em;
+            margin: 40px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    button {
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #FF5733;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    button:hover {
+        background-color: #e14e28;
+    }
+    #result img {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
+        height: auto;
+    }
+    #result p {
+        font-size: 1.2em;
+        color: #555;
+    }</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ポケモン図鑑検索</h1>
+        </header>
+        <main>
+            <div class="search-box">
+                <input type="text" id="pokemonInput" placeholder="図鑑番号または英語名を入力">
+                <button onclick="searchPokemon()">検索</button>
+            </div>
+            <div id="result"></div>
+        </main>
+        <footer>
+            <p>&copy; 2024 ポケモン図鑑検索. Powered by PokéAPI.</p>
+        </footer>
+    </div>
+    <script src="mission_5-2.js"></script>
+</body>
+</html>
